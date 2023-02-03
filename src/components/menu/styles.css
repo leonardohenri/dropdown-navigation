@@ -1,0 +1,107 @@
+.menuContainer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 93%;
+    margin: 20px auto;
+}
+.title{
+    margin-top: 4px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.menu{
+    display: inline-flex;
+    gap: 40px;
+    
+}
+.list {
+    display: flex;
+    gap: 20px;
+    margin-top:10px;
+}
+li{
+    list-style: none;
+    color:hsl(0, 0%, 41%);
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+}
+a:hover{
+    font-weight: 900;
+}
+.menudb{
+    position: absolute; 
+    visibility: hidden; 
+}
+.ativo{
+    margin-top: 5px;
+    visibility: visible;
+    padding: 15px 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.btnM{
+    height: 30px;
+    width: 80px;
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+    margin-left: 10px;
+    color: hsl(0, 0%, 41%);
+}
+#login{
+    border: none;
+    color: hsl(0, 0%, 41%);
+}
+.ulativo{
+    margin: 2px 0;
+    visibility: visible;
+}
+.menuResposivo{
+    display: none;
+}
+.menuMobile{
+
+    display: none;
+}
+.iconMenu{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+.menudbM{
+    display: none;
+    position: absolute;    
+}
+.menuContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.itens{
+    margin-left: 10px;
+}
+.menuIcons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menutext{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#ul1{
+   display: flex; 
+   gap: 20px;
+}
+@media (min-width:320px) and (max-width:1000px){
+    .menu{
+      display: none;
+    }
+    .menuResposivo{
+        display: block;
+    }
+    .login{display: none;}
+  } 
